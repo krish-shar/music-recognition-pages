@@ -2,7 +2,6 @@
 
 import "../globals.css";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import Template from "@/app/(routes)/template";
 import {useRouter} from "next/navigation";
 import PageTransitionEffect from "@/components/page-transition-effect";
 
