@@ -5,9 +5,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { SparklesCore } from "@/components/ui/sparkles"
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect"
 import { MovingBorderButton } from "@/components/ui/moving-border-button";
+import {useRouter} from "next/navigation";
 
 export default function LandingPage() {
 
+    const router = useRouter();
   return (
     <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
       <BackgroundBeams />
@@ -30,7 +32,11 @@ export default function LandingPage() {
             />
           </div>
           <TextGenerateEffect words="Powered by advanced machine learning, HumTune AI recognizes songs from your humming. Experience the magic of music identification like never before." className="text-xl mb-8" />
-          <a href="/project-proposal">
+          <a onClick={() => {
+            // use router to navigate to project proposal page
+            router.push("/project-proposal");
+
+          }}>
           <MovingBorderButton
               
               borderRadius="1.75rem"
