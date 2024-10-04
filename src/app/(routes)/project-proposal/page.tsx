@@ -18,6 +18,12 @@ function Page() {
         setSections(newSections);
     }, []);
 
+    const references = [
+        "A. Amatov et al., A SEMI-SUPERVISED DEEP LEARNING APPROACH TO DATASET COLLECTION FOR QUERY-BY-HUMMING TASK.",
+        "Sun, J., & Lee, S.-P. (n.d.). (rep.). Query by Singing/Humming System Based on Deep Learning (Vol. 12). International Journal of Applied Engineering Research.",
+        "B. L. Pham, H. H. Huong Hoang Luong, T. P. Tran, H. P. Ngo, H. V. Nguyen, and T. Thinh, \"An Approach to Hummed-tune and Song Sequences Matching,\" An Approach to Hummed-tune and Song Sequences Matching, Nov. 20, 2020. https://link.springer.com/chapter/10.1007/978-981-19-8069-5_49 (accessed Oct. 02, 2024)."
+    ];
+
     return (
         <div className="flex min-h-screen bg-background">
             <Sidebar sections={sections}/>
@@ -47,10 +53,10 @@ function Page() {
                         Dataset links:
                     </p>
                     <ul className="list-disc pl-6 text-primary/80 mr-8">
-                        <li><a className="hover:text-blue-500 hover:underline transition-all"
+                        <li><a className="text-blue-500 underline"
                                href="https://www.kaggle.com/datasets/jesusrequena/mlend-hums-and-whistles">Hums and
                             Whistles</a></li>
-                        <li><a className="hover:text-blue-500 hover:underline transition-all"
+                        <li><a className="text-blue-500 underline"
                         href={"https://huggingface.co/datasets/amanteur/CHAD_hummings"}>CHAD Hummings</a></li>
                     </ul>
                     <div className="h-4"/>
@@ -132,11 +138,13 @@ function Page() {
 
                 <section id="section-5" className="mb-12">
                     <h2 className="text-2xl font-semibold mb-4 text-primary">References</h2>
-                    <ol className="list-disc pl-6 text-primary/80">
-                        <li>A. Amatov et al., A SEMI-SUPERVISED DEEP LEARNING APPROACH TO DATASET COLLECTION FOR QUERY-BY-HUMMING TASK.</li>
-                        <li>Sun, J., & Lee, S.-P. (n.d.). (rep.). Query by Singing/Humming System Based on Deep Learning (Vol. 12). International Journal of Applied Engineering Research.
-                        </li>
-                        <li>B. L. Pham, H. H. Huong Hoang Luong, T. P. Tran, H. P. Ngo, H. V. Nguyen, and T. Thinh, “An Approach to Hummed-tune and Song Sequences Matching,” An Approach to Hummed-tune and Song Sequences Matching, Nov. 20, 2020. https://link.springer.com/chapter/10.1007/978-981-19-8069-5_49 (accessed Oct. 02, 2024).</li>
+                    <ol className="list-none pl-0 space-y-2">
+                        {references.map((reference, index) => (
+                            <li key={index} className="flex">
+                                <span className="mr-2 font-bold">[{index + 1}]</span>
+                                <span>{reference}</span>
+                            </li>
+                        ))}
                     </ol>
                 </section>
 

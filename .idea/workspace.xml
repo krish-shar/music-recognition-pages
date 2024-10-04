@@ -59,7 +59,7 @@
       <recent name="$PROJECT_DIR$/src/app/(routes)" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.lint">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -106,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727971690459</updated>
       <workItem from="1727971691793" duration="288000" />
-      <workItem from="1727971989246" duration="18501000" />
+      <workItem from="1727971989246" duration="18814000" />
     </task>
     <servers />
   </component>
