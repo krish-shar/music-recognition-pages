@@ -15,7 +15,7 @@ const Sidebar: React.FC<SidebarProps> = ({ sections }) => {
             e.preventDefault();
             const element = document.getElementById(id);
             if (element) {
-                const offset = -96; // Adjust this value as needed
+                const offset = -16; // Adjust this value as needed
                 const elementPosition = element.getBoundingClientRect().top + window.scrollY;
                 const offsetPosition = elementPosition + offset;
                 window.scrollTo({
