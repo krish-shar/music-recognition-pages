@@ -120,13 +120,13 @@ function Page() {
                     </ul>
                     <div className={"h-4"} />
                     <p className={"text-primary/90 indent-8"}>
-                        These methods were chosen for their effectiveness in processing audio data and capturing the unique characteristics of hummed melodies. The Mel Spectrogram and Fast Fourier Transformation will help extract relevant frequency features, while downsampling will reduce noise and focus on essential data. RNNs are well-suited for sequential data like melodies, while CNNs excel at pattern recognition in spectrograms[3]. The Yin Algorithm will provide accurate pitch estimation, crucial for melody matching. Our quantitative metrics (MRR, Cross-Entropy Loss, and Dynamic Time Warping) will allow us to evaluate model performance comprehensively. We'll implement these techniques using libraries such as PyTorch for audio processing and TensorFlow/Keras for neural network development, ensuring efficient and robust model creation.
+                        These methods were chosen for their effectiveness in processing audio data and capturing the unique characteristics of hummed melodies. The Mel Spectrogram and Fast Fourier Transformation will help extract relevant frequency features, while downsampling will reduce noise and focus on essential data. RNNs are well-suited for sequential data like melodies, while CNNs excel at pattern recognition in spectrograms[3]. The Yin Algorithm will provide accurate pitch estimation, crucial for melody matching. Our quantitative metrics (MRR, Cross-Entropy Loss, and Dynamic Time Warping) will allow us to evaluate model performance comprehensively. We&apos;ll implement these techniques using libraries such as PyTorch for audio processing and TensorFlow/Keras for neural network development, ensuring efficient and robust model creation.
                     </p>
                 </section>
 
                 <section id="section-4" className="mb-12">
                     <h2 className="text-2xl font-semibold mb-4 text-primary">Potential Results and Discussion</h2>
-                    <p className="text-primary/90 indent-8">We'll use Mean Reciprocal Rank (MRR) to evaluate song ranking accuracy, Cross-Entropy Loss to measure model performance, and Dynamic Time Warping to assess melody similarity. Our goal is to minimize prediction errors, enabling quick and accurate song identification from humming. We expect to develop a system that can accurately predict and display the name of a song based on a user's hummed audio sample.
+                    <p className="text-primary/90 indent-8">We&apos;ll use Mean Reciprocal Rank (MRR) to evaluate song ranking accuracy, Cross-Entropy Loss to measure model performance, and Dynamic Time Warping to assess melody similarity. Our goal is to minimize prediction errors, enabling quick and accurate song identification from humming. We expect to develop a system that can accurately predict and display the name of a song based on a user&apos;s hummed audio sample.
                     </p>
                 </section>
 
