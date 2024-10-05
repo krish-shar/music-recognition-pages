@@ -154,7 +154,7 @@ function Page() {
     <div>
         <h1>Gantt Chart</h1>
         <Image 
-            src="/GanttChart.png" 
+            src="GanttChart.png" 
             alt="Gantt Chart" 
             width={500} 
             height={300} 
@@ -168,7 +168,7 @@ function Page() {
         <h2 className="text-2xl font-semibold mb-4 text-primary">Contribution Table</h2>
         <h1>Contribution Table</h1>
         <Image 
-            src="/ContributionTable.png" 
+            src="ContributionTable.png" 
             alt="Contribution Table" 
             width={500} 
             height={300} 
