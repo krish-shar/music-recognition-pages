@@ -4,7 +4,6 @@ const nextConfig = {
     images: {
       unoptimized: true,
     },
-    assetPrefix: "/music-predictor-pages",
   };
   
 export default nextConfig;

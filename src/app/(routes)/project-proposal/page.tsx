@@ -154,7 +154,7 @@ function Page() {
     <div>
         <h1>Gantt Chart</h1>
         <Image 
-            src="GanttChart.png" 
+            src="https://github.com/krish-shar/music-recognition-pages/blob/main/images/GanttChart.png?raw=true"
             alt="Gantt Chart" 
             width={500} 
             height={300} 
@@ -168,7 +168,7 @@ function Page() {
         <h2 className="text-2xl font-semibold mb-4 text-primary">Contribution Table</h2>
         <h1>Contribution Table</h1>
         <Image 
-            src="ContributionTable.png" 
+            src="https://github.com/krish-shar/music-recognition-pages/blob/main/images/ContributionTable.png?raw=true"
             alt="Contribution Table" 
             width={500} 
             height={300} 
