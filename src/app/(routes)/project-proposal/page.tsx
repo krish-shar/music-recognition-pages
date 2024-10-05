@@ -3,6 +3,7 @@
 import React from 'react';
 import {useState, useEffect} from "react";
 import Sidebar from "@/components/sidebar";
+import Image from 'next/image';
 
 function Page() {
 
@@ -149,18 +150,32 @@ function Page() {
                 </section>
                 
                 <section id="section-6" className="mb-12">
-                    <div>
-                        <h1>Gantt Chart</h1>
-                        <img src="/public/GanttChart.png" alt="Gantt Chart" />
-                    </div>
-                </section>
+    <h2 className="text-2xl font-semibold mb-4 text-primary">Gantt Chart</h2>
+    <div>
+        <h1>Gantt Chart</h1>
+        <Image 
+            src="/GanttChart.png" 
+            alt="Gantt Chart" 
+            width={500} 
+            height={300} 
+            layout="responsive"
+        />
+    </div>
+</section>
 
-                <section id="section-7" className="mb-12">
-                    <div>
-                        <h1>Contribution Table</h1>
-                        <img src="public/ContributionTable.png" alt="Contribution Table" />
-                    </div>
-                </section>
+<section id="section-7" className="mb-12">
+    <div>
+        <h2 className="text-2xl font-semibold mb-4 text-primary">Contribution Table</h2>
+        <h1>Contribution Table</h1>
+        <Image 
+            src="/ContributionTable.png" 
+            alt="Contribution Table" 
+            width={500} 
+            height={300} 
+            layout="responsive"
+        />
+    </div>
+</section>
 
             </main>
         </div>
