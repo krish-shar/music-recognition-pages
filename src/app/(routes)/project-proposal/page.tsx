@@ -151,14 +151,14 @@ function Page() {
                 <section id="section-6" className="mb-12">
                     <div>
                         <h1>Gantt Chart</h1>
-                        <img src="/GanttChart.png" alt="Gantt Chart" />
+                        <img src="/public/GanttChart.png" alt="Gantt Chart" />
                     </div>
                 </section>
 
                 <section id="section-7" className="mb-12">
                     <div>
                         <h1>Contribution Table</h1>
-                        <img src="/ContributionTable.png" alt="Contribution Table" />
+                        <img src="public/ContributionTable.png" alt="Contribution Table" />
                     </div>
                 </section>
 
