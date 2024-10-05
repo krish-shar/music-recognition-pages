@@ -4,10 +4,12 @@ import React from 'react';
 import {useState, useEffect} from "react";
 import Sidebar from "@/components/sidebar";
 import Image from 'next/image';
+import { YouTubeEmbed } from "@next/third-parties/google";
 
 function Page() {
 
     const [sections, setSections] = useState([]);
+
 
     useEffect(() => {
         const headings = Array.from(document.querySelectorAll("h2"));
@@ -30,6 +32,23 @@ function Page() {
             <Sidebar sections={sections}/>
             <main className="flex-1 p-8">
                 <p className="text-4xl font-bold mb-8 text-primary">Project Proposal</p>
+
+                <section id="section-0" className="mb-12">
+                    <h2 className="text-2xl font-semibold mb-4 text-primary">Video Presentation</h2>
+                    <div className="aspect-w-16 aspect-h-9">
+                        <YouTubeEmbed
+                            videoid="cEeuGUJa3K8"
+                            height={400}
+                            width={720}
+                            />
+                        {/* <iframe
+                            src="https://www.youtube.com/watch?v=cEeuGUJa3K8"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            className="w-full h-full"
+                        /> */}
+                    </div>
+                </section>
 
                 <section id="section-1" className="mb-12">
                     <h2 className="text-2xl font-semibold mb-4 text-primary">Introduction and Background</h2>
