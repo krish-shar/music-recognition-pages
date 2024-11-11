@@ -34,7 +34,7 @@ export default function LandingPage() {
           <TextGenerateEffect words="Powered by advanced machine learning, HumTune AI recognizes songs from your humming. Experience the magic of music identification like never before." className="text-xl mb-8" />
           <a onClick={() => {
             // use router to navigate to project proposal page
-            router.push("/project-proposal");
+            router.push("/midterm-report");
 
           }}>
           <MovingBorderButton
@@ -42,7 +42,7 @@ export default function LandingPage() {
               borderRadius="1.75rem"
               className="bg-primary-foreground text-primary border-primary/10 hover:border-secondary-foreground hover:bg-primary/80 hover:text-primary-foreground transition-all duration-300"
 >
-  View Project Proposal
+  View Midterm Report
 </MovingBorderButton>
 </a>
         </section>
