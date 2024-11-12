@@ -9,7 +9,7 @@ import { YouTubeEmbed } from "@next/third-parties/google";
 function Page() {
 
     const [sections, setSections] = useState([]);
-
+    
 
     useEffect(() => {
         const headings = Array.from(document.querySelectorAll("h2"));
