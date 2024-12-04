@@ -29,7 +29,7 @@ function Page() {
 	<div className="flex min-h-screen bg-background">
 		<Sidebar sections={sections}/>
 		<main className="flex-1 p-8">
-			<p className="text-4xl font-bold mb-8 text-primary">Midterm Report</p>
+			<p className="text-4xl font-bold mb-8 text-primary">Final Report</p>
 
 			<section id="section-1" className="mb-12">
 				<h2 className="text-2xl font-semibold mb-4 text-primary">Introduction and Background</h2>
@@ -123,10 +123,47 @@ function Page() {
 						<p className="text-sm text-center mt-2">Figure 2: Quantitative Metrics for CNN without PCA</p>
 					</div>
 					</div>
+
+                    <p className="text-primary/90">
+					This approach involves preprocessing the training data for a music recognition system by converting train audio 
+                    into sine waves and applying augmentation techniques like speed and pitch variations, as well as normalization, to enrich 
+                    the dataset. This meticulous preprocessing aims to capture the fundamental audio characteristics needed for accurate melody 
+                    recognition. By avoiding Principal Component Analysis (PCA), all audio features are preserved, which enhances the precision 
+                    of the recognition model, allowing it to effectively differentiate between similar melodies. The final model, a Convolutional 
+                    Neural Network (CNN) without PCA, achieved an impressive training accuracy of 98.70%, a perfect validation accuracy of 100.00%, 
+                    and a test accuracy of 95.24%, demonstrating its robustness and reliability in recognizing hummed melodies.
+
+                    We also implemented the use of a Random Forest algorithm for processing and predicting outcomes based on preprocessed train data. 
+                    In this approach, train audio is first converted into sine waves, and then augmented through speed, pitch, and variation adjustments, 
+                    followed by normalization. The Random Forest algorithm is chosen for its ability to handle complex datasets robustly by combining multiple 
+                    decision trees, thereby enhancing the model's precision and reducing overfitting. This makes it particularly effective for managing 
+                    the intricacies of audio data. However, after thoroughly training and testing the results, we discovered that the CNN model without 
+                    PCA outperformed the Random Forest model in terms of both accuracy and efficiency. Consequently, we opted for the CNN model without PCA.
+					</p>
+
 				</div>
 				</section>
 
-			<section id="section-5" className="mb-12">
+            <section id="section-5" className="mb-12">
+			  <h2 className="text-2xl font-semibold mb-4 text-primary">Next Steps</h2>
+			  <p className="text-primary/90 indent-8">
+              To enhance the accuracy of our model for recognizing hummed melodies, 
+              several strategies can be employed. Fine-tuning the model with additional diverse 
+              datasets can help it better generalize across different humming styles and conditions. 
+              Exploring alternative machine learning algorithms or neural network architectures 
+              that might capture the nuances of hummed melodies more effectively is also beneficial. 
+              Improving the preprocessing steps to incorporate variations in speed and rhythm can 
+              further refine the input data quality. Utilizing transfer learning by leveraging 
+              pre-trained CNN models, such as those trained on ImageNet or Inception ResNet, and 
+              fine-tuning them for specific tasks can significantly enhance performance, especially 
+              when training data is limited. Additionally, incorporating temporal information through 
+              the use of recurrent neural networks (RNNs) or long short-term memory (LSTM) networks, 
+              in combination with CNNs, can better capture the sequential nature of melodies, 
+              potentially leading to more precise recognition outcomes.
+			  </p>
+			</section>
+            
+            <section id="section-6" className="mb-12">
 			  <h2 className="text-2xl font-semibold mb-4 text-primary">References</h2>
 			  <ol className="list-none pl-0 space-y-2">
 				  {references.map((reference, index) => (
